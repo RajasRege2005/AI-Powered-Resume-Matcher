@@ -1,10 +1,25 @@
-# Ignore environment files
-.env
-
-# Python
-__pycache__/
+# === Python (Backend) ===
+venv/          # Virtual environment folder
+__pycache__/   # Python cache files
 *.pyc
-backend/venv/
+*.pyo
+*.pyd
+.env           # Environment variables (sensitive data)
+.env.local
 
-# Node (React)
-frontend/node_modules/
+# === Node.js/React (Frontend) ===
+node_modules/  # Massive dependency folder (reinstall via npm)
+build/         # React build folder
+.cache/
+.env
+.env.local
+
+# === OS/Editor Files ===
+.DS_Store      # macOS hidden file
+Thumbs.db      # Windows thumbnail cache
+.idea/         # JetBrains IDE (WebStorm/PyCharm)
+.vscode/       # VS Code settings
+
+# === Logs & Temporary Files ===
+*.log
+*.tmp
